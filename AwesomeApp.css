@@ -1,0 +1,532 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+:root {
+    --white-color: #ffff;
+    --gray-color: #84757d;
+    --lightgrey-color: rgba(0, 0, 0, .1);
+    --orange-color: #f5593d;
+    --lightblue-color: #f5fafd;
+    --darkgrey-color: #66615b;
+}
+
+.intro-section,
+nav {
+    background: url('images/home-image.jpg') no-repeat;
+    background-size: cover;
+}
+
+.flex-div {
+    display: flex;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+nav {
+    justify-content: space-between;
+    padding: 2rem 13%;
+}
+
+
+.main-logo p {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    margin-left: 1rem;
+    color: var(--white-color);
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.nav-list a {
+    margin: 0rem 1rem;
+    font-size: .8rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #d7d8d8;
+}
+
+.nav-list a:hover {
+    color: var(--white-color);
+}
+
+.nav-list #download-btn {
+    border: 2px solid var(--white-color);
+    border-radius: 3rem;
+    color: var(--white-color);
+    padding: .7rem 1.2rem;
+    transition: all .2s;
+}
+
+.nav-list #download-btn:hover {
+    background-color: var(--white-color);
+    color: #000000;
+}
+
+
+.intro-section {
+    justify-content: space-between;
+    padding: 5rem 13%;
+}
+
+.intro-info {
+    color: var(--white-color);
+    width: 50%;
+
+}
+
+.intro-info h1 {
+    font-size: 3rem;
+    text-transform: capitalize;
+    font-weight: 500;
+    line-height: 3.5rem;
+}
+
+.intro-info #small-desc {
+    line-height: 1.5rem;
+    margin-top: 1rem;
+}
+
+.intro-info p {
+    line-height: 2.5rem;
+    font-size: 1.02rem;
+
+}
+
+.intro-info p i {
+    font-size: .8rem;
+    padding-right: 1rem;
+}
+
+.intro-info #explore-btn {
+    border: 2px solid var(--white-color);
+    padding: .7rem 1.2rem;
+    border-radius: 3rem;
+    font-size: .8rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: var(--white-color);
+    line-height: 8rem;
+    transition: all .2s;
+}
+
+.intro-info #explore-btn:hover {
+    background-color: var(--white-color);
+    color: #000000;
+}
+
+/* ------------------SECTION 2------------------ */
+
+.sec-2 {
+    padding: 4rem 13% 1rem 13%;
+}
+
+.sec-2 .options-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4rem;
+}
+
+
+.sec-2 .options {
+    display: flex;
+}
+
+.sec-2 .options i {
+    color: var(--orange-color);
+    font-size: 3rem;
+    padding-right: 2rem;
+}
+
+.sec-2 .options .options-info h3 {
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin-bottom: 1.2rem;
+    display: block;
+}
+
+.sec-2 .options .options-info p {
+    font-size: 1.03rem;
+    color: var(--gray-color);
+}
+
+.sec-2>hr {
+    margin-top: 4rem;
+}
+
+.sec-2 .wh-question {
+    padding: 4rem 0rem;
+}
+
+.sec-2 .wh-question>img {
+    width: 40%;
+}
+
+.sec-2 .wh-question .question h3 {
+    font-size: 2.5rem;
+    font-weight: 500;
+    padding: 1rem 0rem;
+}
+
+.sec-2 .wh-question .question p {
+    color: var(--gray-color);
+}
+
+.sec-2 .wh-question .question #small-desc {
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+
+}
+
+.sec-2 .wh-question .question p i {
+    font-size: .8rem;
+    padding-right: 1rem;
+    margin: .8rem 0rem;
+}
+
+/* ---------Section-4------------ */
+
+
+.sec-4 {
+    padding: 4rem 13%;
+    text-align: center;
+}
+
+.sec-4 h3,
+.sec-4 .subscriptions .subs-options h3 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    padding: 2rem 0rem;
+}
+
+.sec-4 .subscriptions .subs-options h3 {
+    background-color: var(--white-color);
+    padding: 1rem 0rem;
+}
+
+.sec-4 p,
+.sec-4 .subscriptions .subs-options p,
+.sec-4 .subscriptions .subs-options a {
+    font-size: 1rem;
+}
+
+.sec-4>p,
+.sec-4 .reviews p {
+    line-height: 1.8rem;
+    font-size: 1.03rem;
+}
+
+.sec-4 .subscriptions {
+    padding: 3rem 0rem 6rem 0rem;
+    justify-content: space-between;
+}
+
+.sec-4 .subscriptions .subs-options {
+    width: 23%;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--lightblue-color);
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, .2),
+        -0px 3px 10px rgba(0, 0, 0, 0);
+    transition: all .2s;
+}
+
+.sec-4 .subscriptions .subs-options:hover {
+    transform: translateY(-1rem);
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, .5),
+        -0px 3px 10px rgba(0, 0, 0, 0);
+
+}
+
+.sec-4 .subscriptions .subs-options .subs-heading {
+    font-size: 1.5rem;
+    color: black;
+    border: none;
+}
+
+.sec-4 .subscriptions .subs-options p {
+    width: 50%;
+    margin: 0rem auto;
+    padding: 1rem 3rem;
+    border-bottom: 1px dashed var(--lightgrey-color);
+    color: var(--gray-color);
+
+}
+
+.sec-4 .subscriptions .subs-options .free-trial {
+    text-transform: capitalize;
+    color: var(--gray-color);
+    width: fit-content;
+    margin: 4rem auto 0rem auto;
+    font-size: 1rem;
+}
+
+.sec-4 .subscriptions .subs-options .free-trial:hover {
+    color: var(--darkgrey-color);
+}
+
+.sec-4 .subscriptions .subs-options .buy-btn {
+    width: fit-content;
+    margin: 1rem auto 2rem auto;
+    padding: .5rem 2rem;
+    border: 2px solid var(--darkgrey-color);
+    border-radius: 3rem;
+    font-size: .9rem;
+    color: var(--darkgrey-color);
+    font-weight: 600;
+    transition: all .2s;
+}
+
+.sec-4 .subscriptions .subs-options .buy-btn:hover {
+    background-color: var(--darkgrey-color);
+    color: var(--white-color);
+}
+
+.sec-4 .subscriptions .standard-option {
+    overflow: hidden;
+    background-color: var(--white-color);
+}
+
+.sec-4 .subscriptions .standard-option h3 {
+    background: url('images/home-image.jpg') no-repeat;
+    background-size: cover;
+    color: var(--white-color);
+}
+
+.sec-4 .subscriptions .standard-option .buy-btn {
+    background: url('images/home-image.jpg') no-repeat;
+    background-size: cover;
+    color: var(--white-color);
+    border: none;
+    padding: .6rem 2rem
+}
+
+.sec-4 .reviews{
+    padding: 3rem 0rem;
+}
+
+.sec-4 .reviews .review-container{
+    justify-content: space-between;
+    margin-top: 3rem;
+}
+
+.sec-4 .reviews .review-box {
+    width: 25%;
+    padding: 2.3rem;
+    text-align: left;
+    border-radius: 1rem;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, .1);
+    background-color: var(--lightblue-color);
+    color: var(--gray-color);
+}
+
+.sec-4 .reviews .review-box .review-user{
+    margin-top: 1.5rem;
+}
+
+
+.sec-4 .reviews .review-box .review-user img{
+    width: 6rem;
+    border-radius: 50%;
+    margin-right: 2rem;
+}
+
+.sec-4 .reviews .review-box .review-user .user-info h2{
+    font-weight: 500;
+    font-size: 1.3rem;
+    margin-bottom: .8rem;
+    color: #000000;
+}
+
+.sec-4 .reviews .review-box p{
+    line-height: 1.3rem;
+}
+
+/* ---------------SECTION 5----------- */
+
+.sec-5{
+    padding: 5rem 13%;
+    text-align: center;
+    background: url('images/home-image.jpg') no-repeat;
+    background-size: cover;
+}
+
+.sec-5>h1{
+    color: var(--white-color);
+    padding-bottom: 3rem;
+
+}
+.sec-5 .os-downloads{
+    justify-content: space-between;
+
+}
+.sec-5 .os-downloads .os-box{
+    background-color: var(--white-color);
+    align-items: center;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    width: 27%;
+    color:var(--gray-color);
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, .1);
+    transition: all .2s;
+}
+
+.sec-5 .os-downloads .os-box:hover{
+    transform: translateY(-.8rem);
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, .2);
+}
+
+.sec-5 .os-downloads .os-box:hover .apple-icon{
+    color: #b4b0b0;
+}
+.sec-5 .os-downloads .os-box:hover .android-icon{
+    color: #a4c639;
+}
+.sec-5 .os-downloads .os-box:hover .window-icon{
+    color: #0078d7;
+}
+
+.sec-5 .os-downloads .os-box i{
+    font-size: 3.8rem;
+    padding-right: 1.5rem;
+}
+
+.sec-5 .os-downloads .os-box .os-info{
+    text-align: left;
+    line-height: 1.8rem;
+}
+
+.sec-5 .os-downloads .os-box .os-info h2{
+    font-weight: 500;
+    font-size:1.3rem;
+    color: #000000;
+}
+
+/* -----------FOOTER------------ */
+
+footer{
+    padding: 4rem 13%;
+    text-align: center;
+    line-height: 1.5rem;
+    color:var(--white-color);
+    background-color: #252422;
+}
+
+footer .social-media-icons{
+    width: 17%;
+    margin: 0rem auto;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+footer .social-media-icons i{
+    font-size: 1.5rem;
+    font-weight: 200;
+}
+
+footer p span{
+    text-decoration: 1px dashed underline var(--white-color);
+}
+
+
+@media  only screen and (max-width:750px) {
+    nav,
+    .intro-section,
+    .sec-2,
+    .wh-question,
+    .sec-4,
+    .sec-4 .reviews,
+    .sec-5,
+    footer{
+        padding: 3rem 6%;
+        
+    }
+   .nav-list{
+        display: none;
+   }
+
+   .main-logo{
+    justify-content: space-between;
+    width: 100%;
+   }
+
+   .intro-section,
+   .wh-question,
+   .sec-4 .subscriptions,
+   .review-container,
+   .review-user,
+   .sec-5 .os-downloads,
+   .sec-5 .os-downloads .os-box{
+    flex-direction: column;
+   }
+
+   .sec-4 .subscriptions,
+   .review-user,
+   .review-container,
+   .sec-5 .os-downloads,
+   .sec-5 .os-downloads .os-box{
+    row-gap:2rem ;
+   }
+
+   .intro-section > *,
+    .wh-question,
+    .wh-question > img,
+    .sec-4 .subscriptions .subs-options,
+    .sec-4 .reviews .review-box,
+    .sec-5 .os-downloads .os-box{
+    width: 100%;
+   }
+
+   .sec-2 .options-list{
+    grid-template-columns: 1fr;
+    gap: 4rem;
+   }
+
+   .sec-5 .os-downloads .os-box i{
+    justify-content: center;
+   }
+
+   .sec-5 .os-downloads .os-box .os-info,
+   .sec-4 .reviews .review-box .review-user .user-info,
+   .sec-4 .reviews .review-box{
+    text-align: center;
+   }
+
+   .sec-5 .os-downloads .os-box{
+    padding: 1.5rem 0rem;
+   }
+
+   .sec-5 .os-downloads .os-box i{
+    padding-right: 0rem;
+   }
+
+   .sec-4 .reviews .review-box{
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   }
+
+   .sec-4 .reviews .review-box > p{
+    min-width: 25ch;
+   }
+
+   .sec-4 .reviews .review-box .review-user img{
+    margin-right: 0rem;
+   }
+
+   footer .social-media-icons{
+    width: 100%;
+    justify-content: space-evenly;
+   }
+
+   
+   
+}
